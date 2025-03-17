@@ -1,0 +1,10 @@
+19:26:18 **** Build of configuration Debug for project blinky ****
+make -j16 all 
+arm-none-eabi-size  blinky.elf 
+   text	   data	    bss	    dec	    hex	filename
+   8612	     12	   1644	  10268	   281c	blinky.elf
+Finished building: default.size.stdout
+ 
+
+19:26:19 Build Finished. 0 errors, 0 warnings. (took 687ms)
+
