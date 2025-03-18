@@ -1,30 +1,5 @@
-2025-03-17 07:35:27,896 [INFO] WebApp:194 - Connection lost
-2025-03-17 07:35:28,211 [INFO] WebApp:191 - Connection restablished
-2025-03-17 07:35:30,362 [INFO] WebApp:194 - Connection lost
-2025-03-17 07:35:30,547 [INFO] WebApp:191 - Connection restablished
-2025-03-17 07:35:33,491 [INFO] WebApp:194 - Connection lost
-2025-03-17 07:35:33,685 [INFO] WebApp:191 - Connection restablished
-2025-03-17 08:08:44,876 [INFO] WebApp:194 - Connection lost
-2025-03-17 08:08:45,354 [INFO] WebApp:191 - Connection restablished
-2025-03-17 18:10:24,881 [INFO] WebApp:194 - Connection lost
-2025-03-17 18:10:25,452 [INFO] WebApp:191 - Connection restablished
-2025-03-17 18:10:28,344 [INFO] WebApp:194 - Connection lost
-2025-03-17 18:10:28,531 [INFO] WebApp:191 - Connection restablished
-2025-03-17 18:10:31,467 [INFO] WebApp:194 - Connection lost
-2025-03-17 18:10:31,667 [INFO] WebApp:191 - Connection restablished
-2025-03-17 18:39:21,872 [INFO] WebApp:194 - Connection lost
-2025-03-17 18:39:22,145 [INFO] WebApp:191 - Connection restablished
-2025-03-17 18:39:25,346 [INFO] WebApp:194 - Connection lost
-2025-03-17 18:39:25,509 [INFO] WebApp:191 - Connection restablished
-2025-03-17 18:39:28,460 [INFO] WebApp:194 - Connection lost
-2025-03-17 18:39:28,640 [INFO] WebApp:191 - Connection restablished
-2025-03-17 20:12:17,034 [INFO] WebApp:194 - Connection lost
-2025-03-17 20:12:17,352 [INFO] WebApp:191 - Connection restablished
-2025-03-17 20:12:17,498 [INFO] WebApp:194 - Connection lost
-2025-03-17 20:12:17,756 [INFO] WebApp:191 - Connection restablished
-2025-03-17 20:12:21,344 [INFO] WebApp:194 - Connection lost
-2025-03-17 20:12:21,520 [INFO] WebApp:191 - Connection restablished
-2025-03-17 20:37:38,344 [INFO] WebApp:194 - Connection lost
-2025-03-17 20:37:38,518 [INFO] WebApp:191 - Connection restablished
-2025-03-17 20:37:40,440 [INFO] WebApp:194 - Connection lost
-2025-03-17 20:37:40,631 [INFO] WebApp:191 - Connection restablished
+2025-03-18 08:19:54,392 [INFO] Activator:176 - 
+
+
+2025-03-18 08:19:54,401 [INFO] Activator:177 - !SESSION log4j initialized
+2025-03-18 08:20:04,168 [INFO] LogOutputStream:77 - [STDOUT_REDIRECT] 

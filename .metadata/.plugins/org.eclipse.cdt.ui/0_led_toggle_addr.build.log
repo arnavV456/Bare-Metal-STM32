@@ -1,10 +1,10 @@
-21:30:48 **** Incremental Build of configuration Debug for project 0_led_toggle_addr ****
+08:25:52 **** Incremental Build of configuration Debug for project 0_led_toggle_addr ****
 make -j16 all 
 arm-none-eabi-size  0_led_toggle_addr.elf 
    text	   data	    bss	    dec	    hex	filename
-    772	      0	   1568	   2340	    924	0_led_toggle_addr.elf
+    796	      0	   1568	   2364	    93c	0_led_toggle_addr.elf
 Finished building: default.size.stdout
  
 
-21:30:48 Build Finished. 0 errors, 0 warnings. (took 147ms)
+08:25:52 Build Finished. 0 errors, 0 warnings. (took 326ms)
 
