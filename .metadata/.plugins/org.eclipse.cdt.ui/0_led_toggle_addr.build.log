@@ -1,15 +1,10 @@
-19:10:17 **** Build of configuration Debug for project 0_led_toggle_addr ****
+21:30:48 **** Incremental Build of configuration Debug for project 0_led_toggle_addr ****
 make -j16 all 
-arm-none-eabi-gcc -mcpu=cortex-m4 -g3 -DDEBUG -c -x assembler-with-cpp -MMD -MP -MF"Startup/startup_stm32f446retx.d" -MT"Startup/startup_stm32f446retx.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Startup/startup_stm32f446retx.o" "../Startup/startup_stm32f446retx.s"
-arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F446RETx -DNUCLEO_F446RE -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
-arm-none-eabi-gcc "../Src/syscalls.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F446RETx -DNUCLEO_F446RE -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/syscalls.d" -MT"Src/syscalls.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/syscalls.o"
-arm-none-eabi-gcc "../Src/sysmem.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F446RETx -DNUCLEO_F446RE -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/sysmem.d" -MT"Src/sysmem.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/sysmem.o"
-arm-none-eabi-gcc -o "0_led_toggle_addr.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Projects\Bare-Metal-C-Programming\0_led_toggle_addr\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="0_led_toggle_addr.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-C:/ST/STM32CubeIDE_1.17.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344/tools/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/bin/ld.exe: ./Startup/startup_stm32f446retx.o: in function `Reset_Handler':
-C:/Projects/Bare-Metal-C-Programming/0_led_toggle_addr/Debug/../Startup/startup_stm32f446retx.s:97:(.text.Reset_Handler+0x32): undefined reference to `main'
-collect2.exe: error: ld returned 1 exit status
-make: *** [makefile:63: 0_led_toggle_addr.elf] Error 1
-"make -j16 all" terminated with exit code 2. Build might be incomplete.
+arm-none-eabi-size  0_led_toggle_addr.elf 
+   text	   data	    bss	    dec	    hex	filename
+    772	      0	   1568	   2340	    924	0_led_toggle_addr.elf
+Finished building: default.size.stdout
+ 
 
-19:10:20 Build Failed. 2 errors, 0 warnings. (took 3s.775ms)
+21:30:48 Build Finished. 0 errors, 0 warnings. (took 147ms)
 
