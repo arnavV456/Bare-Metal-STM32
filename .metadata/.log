@@ -326,3 +326,6 @@ Command-line arguments:  -os win32 -ws win32 -arch x86_64
 
 !ENTRY org.eclipse.cdt.core 1 0 2025-03-19 13:15:53.257
 !MESSAGE Indexed '3_gpio_bsrr' (5 sources, 60 headers) in 1.57 sec: 2,913 declarations; 3,939 references; 3 unresolved inclusions; 30 syntax errors; 707 unresolved names (9.4%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2025-03-19 13:45:24.737
+!MESSAGE Indexed '4_gpio_input' (3 sources, 60 headers) in 1.07 sec: 2,856 declarations; 3,851 references; 3 unresolved inclusions; 30 syntax errors; 707 unresolved names (9.5%)
