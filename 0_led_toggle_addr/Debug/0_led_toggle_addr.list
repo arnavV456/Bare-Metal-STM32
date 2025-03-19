@@ -79,16 +79,15 @@ Disassembly of section .text:
  8000200:	080002fc 	.word	0x080002fc
 
 08000204 <main>:
-#define GPIOA_OD_R					(*(volatile unsigned int*)(GPIOA_BASE + ODR_R_OFFSET))
 #define GPIOAEN						(1U<<0)
 #define PIN5						(1U<<5)
 #define LED_PIN						PIN5
+
 int main()
 {
  8000204:	b480      	push	{r7}
  8000206:	b083      	sub	sp, #12
  8000208:	af00      	add	r7, sp, #0
-
 	//1. Enable clock access for GPIOA
 		RCC_AHB1EN_R |= GPIOAEN;
  800020a:	4b11      	ldr	r3, [pc, #68]	@ (8000250 <main+0x4c>)
@@ -97,13 +96,13 @@ int main()
  8000210:	f043 0301 	orr.w	r3, r3, #1
  8000214:	6013      	str	r3, [r2, #0]
 	//2.Set PA5 as output pin
-		GPIOA_MODE_R |= (1U<<10);
+		GPIOA_MODE_R |= (1U<<10); // setting bit 10 as 1
  8000216:	4b0f      	ldr	r3, [pc, #60]	@ (8000254 <main+0x50>)
  8000218:	681b      	ldr	r3, [r3, #0]
  800021a:	4a0e      	ldr	r2, [pc, #56]	@ (8000254 <main+0x50>)
  800021c:	f443 6380 	orr.w	r3, r3, #1024	@ 0x400
  8000220:	6013      	str	r3, [r2, #0]
-		GPIOA_MODE_R &= ~(1U<<11);
+		GPIOA_MODE_R &= ~(1U<<11); // setting bit 11 as 0
  8000222:	4b0c      	ldr	r3, [pc, #48]	@ (8000254 <main+0x50>)
  8000224:	681b      	ldr	r3, [r3, #0]
  8000226:	4a0b      	ldr	r2, [pc, #44]	@ (8000254 <main+0x50>)
