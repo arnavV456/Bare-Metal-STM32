@@ -353,3 +353,6 @@ Command-line arguments:  -os win32 -ws win32 -arch x86_64
 
 !ENTRY org.eclipse.cdt.core 1 0 2025-03-19 23:11:15.733
 !MESSAGE Indexed '6_uart_printf' (3 sources, 62 headers) in 1.02 sec: 3,293 declarations; 5,502 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.023%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2025-03-19 23:27:15.431
+!MESSAGE Indexed '7_uart_modular' (3 sources, 64 headers) in 0.415 sec: 3,439 declarations; 5,646 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.022%)
