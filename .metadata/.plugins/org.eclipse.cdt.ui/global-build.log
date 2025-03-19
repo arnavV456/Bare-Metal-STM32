@@ -1,21 +1,14 @@
-20:17:54 **** Incremental Build of configuration Debug for project 5_uart_tx ****
+23:19:10 **** Incremental Build of configuration Debug for project 6_uart_printf ****
 make -j16 all 
-arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F446RETx -DNUCLEO_F446RE -DSTM32F446xx -c -I../Inc -I"C:/Projects/Bare-Metal-C-Programming/chip_headers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Projects/Bare-Metal-C-Programming/chip_headers/CMSIS/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
-arm-none-eabi-gcc -o "5_uart_tx.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Projects\Bare-Metal-C-Programming\5_uart_tx\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="5_uart_tx.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: 5_uart_tx.elf
- 
-arm-none-eabi-size  5_uart_tx.elf 
-arm-none-eabi-objdump -h -S 5_uart_tx.elf  > "5_uart_tx.list"
+arm-none-eabi-size  6_uart_printf.elf 
    text	   data	    bss	    dec	    hex	filename
-    996	      0	   1568	   2564	    a04	5_uart_tx.elf
+   5196	     92	   1900	   7188	   1c14	6_uart_printf.elf
 Finished building: default.size.stdout
  
-Finished building: 5_uart_tx.list
- 
-20:18:04 **** Incremental Build of configuration Debug for project 5_uart_tx ****
+23:19:22 **** Incremental Build of configuration Debug for project 6_uart_printf ****
 make -j16 all 
-arm-none-eabi-size  5_uart_tx.elf 
+arm-none-eabi-size  6_uart_printf.elf 
    text	   data	    bss	    dec	    hex	filename
-    996	      0	   1568	   2564	    a04	5_uart_tx.elf
+   5196	     92	   1900	   7188	   1c14	6_uart_printf.elf
 Finished building: default.size.stdout
  
