@@ -351,3 +351,21 @@
 2025-03-19 12:18:38,419 [ERROR] DbBoards:659 - Image file not found for board B-WBA5M-WPAN: C:\Users\verma\.stmcufinder\plugins\mcufinder//mcu//boards_images/B-WBA5M-WPAN.jpg
 2025-03-19 12:18:40,002 [ERROR] DbBoards:659 - Image file not found for board NUCLEO-U385RG-Q: C:\Users\verma\.stmcufinder\plugins\mcufinder//mcu//boards_images/NUCLEO-U385RG-Q.jpg
 2025-03-19 12:18:42,264 [INFO] DbBoards:665 - Loaded 209 board mini-images
+2025-03-19 12:23:01,040 [INFO] McuFinderGlobals:76 - Set McuFinderConnectedMode to true
+2025-03-19 12:23:01,048 [INFO] ApiDb:448 - Save user favorites file C:\Users\verma/.stm32cubeide/favorites.mcus.txt: 0 item(s)
+2025-03-19 12:23:01,048 [INFO] ApiDb:452 - User favorites MCUs=[]
+2025-03-19 12:23:01,051 [INFO] ApiDb:448 - Save user favorites file C:\Users\verma/.stm32cubeide/favorites.boards.txt: 0 item(s)
+2025-03-19 12:23:01,052 [INFO] ApiDb:452 - User favorites Boards=[]
+2025-03-19 12:56:09,753 [INFO] WebApp:194 - Connection lost
+2025-03-19 12:56:10,112 [INFO] WebApp:191 - Connection restablished
+2025-03-19 12:56:12,352 [INFO] WebApp:194 - Connection lost
+2025-03-19 12:56:12,611 [INFO] WebApp:191 - Connection restablished
+2025-03-19 12:56:15,458 [INFO] WebApp:194 - Connection lost
+2025-03-19 12:56:15,714 [INFO] WebApp:191 - Connection restablished
+2025-03-19 14:38:11,747 [INFO] WebApp:403 - JxBrowser engine has been closed 
+2025-03-19 14:38:14,988 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 
+2025-03-19 15:04:33,453 [INFO] Activator:176 - 
+
+
+2025-03-19 15:04:33,455 [INFO] Activator:177 - !SESSION log4j initialized
+2025-03-19 15:04:38,225 [INFO] LogOutputStream:77 - [STDOUT_REDIRECT] 

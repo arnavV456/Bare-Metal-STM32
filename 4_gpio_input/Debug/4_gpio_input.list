@@ -87,19 +87,19 @@ Disassembly of section .text:
 int main(){
  8000204:	b480      	push	{r7}
  8000206:	af00      	add	r7, sp, #0
-	RCC->AHB1ENR |= GPIOAEN;
+	RCC->AHB1ENR |= GPIOAEN;	//enabling clock for gpio a
  8000208:	4b18      	ldr	r3, [pc, #96]	@ (800026c <main+0x68>)
  800020a:	6b1b      	ldr	r3, [r3, #48]	@ 0x30
  800020c:	4a17      	ldr	r2, [pc, #92]	@ (800026c <main+0x68>)
  800020e:	f043 0301 	orr.w	r3, r3, #1
  8000212:	6313      	str	r3, [r2, #48]	@ 0x30
-	RCC->AHB1ENR |= GPIOCEN;
+	RCC->AHB1ENR |= GPIOCEN;	//enabling clock for gpio c
  8000214:	4b15      	ldr	r3, [pc, #84]	@ (800026c <main+0x68>)
  8000216:	6b1b      	ldr	r3, [r3, #48]	@ 0x30
  8000218:	4a14      	ldr	r2, [pc, #80]	@ (800026c <main+0x68>)
  800021a:	f043 0304 	orr.w	r3, r3, #4
  800021e:	6313      	str	r3, [r2, #48]	@ 0x30
-	GPIOA->MODER |= 1U<<10;
+	GPIOA->MODER |= 1U<<10;		// setting pin 5 as output
  8000220:	4b13      	ldr	r3, [pc, #76]	@ (8000270 <main+0x6c>)
  8000222:	681b      	ldr	r3, [r3, #0]
  8000224:	4a12      	ldr	r2, [pc, #72]	@ (8000270 <main+0x6c>)
@@ -111,7 +111,7 @@ int main(){
  8000230:	4a0f      	ldr	r2, [pc, #60]	@ (8000270 <main+0x6c>)
  8000232:	f423 6300 	bic.w	r3, r3, #2048	@ 0x800
  8000236:	6013      	str	r3, [r2, #0]
-	GPIOC->MODER &= ~(1U<<26);
+	GPIOC->MODER &= ~(1U<<26);	//setting pin 13 as input
  8000238:	4b0e      	ldr	r3, [pc, #56]	@ (8000274 <main+0x70>)
  800023a:	681b      	ldr	r3, [r3, #0]
  800023c:	4a0d      	ldr	r2, [pc, #52]	@ (8000274 <main+0x70>)
