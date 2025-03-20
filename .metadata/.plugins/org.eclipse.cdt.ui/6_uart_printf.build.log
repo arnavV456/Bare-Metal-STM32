@@ -1,4 +1,4 @@
-23:19:22 **** Incremental Build of configuration Debug for project 6_uart_printf ****
+00:15:55 **** Incremental Build of configuration Debug for project 6_uart_printf ****
 make -j16 all 
 arm-none-eabi-size  6_uart_printf.elf 
    text	   data	    bss	    dec	    hex	filename
@@ -6,5 +6,5 @@ arm-none-eabi-size  6_uart_printf.elf
 Finished building: default.size.stdout
  
 
-23:19:22 Build Finished. 0 errors, 0 warnings. (took 155ms)
+00:15:55 Build Finished. 0 errors, 0 warnings. (took 406ms)
 

@@ -356,3 +356,24 @@ Command-line arguments:  -os win32 -ws win32 -arch x86_64
 
 !ENTRY org.eclipse.cdt.core 1 0 2025-03-19 23:27:15.431
 !MESSAGE Indexed '7_uart_modular' (3 sources, 64 headers) in 0.415 sec: 3,439 declarations; 5,646 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.022%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2025-03-19 23:40:58.331
+!MESSAGE Indexed '6_uart_rx' (4 sources, 61 headers) in 0.423 sec: 2,879 declarations; 3,927 references; 6 unresolved inclusions; 30 syntax errors; 707 unresolved names (9.4%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2025-03-19 23:41:09.042
+!MESSAGE Indexed '8_uart_rx' (0 sources, 0 headers) in 0 sec: 0 declarations; 0 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
+
+!ENTRY org.eclipse.help.base 2 0 2025-03-20 00:15:05.257
+!MESSAGE Unable to consume Lucene index from bundle 'org.eclipse.cdt.doc.user_11.6.1.202406241230 [523]'. The index should be rebuilt with Lucene 9.11.1
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-03-20 00:16:21.218
+!MESSAGE Error - No active DSF-Session. tmpSessionId = 15 (contextManager row 121)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-03-20 00:16:21.219
+!MESSAGE Existing sessions are:
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-03-20 00:16:21.222
+!MESSAGE Error - No active DSF-Session. tmpSessionId = 15 (contextManager row 121)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-03-20 00:16:21.223
+!MESSAGE Existing sessions are:
