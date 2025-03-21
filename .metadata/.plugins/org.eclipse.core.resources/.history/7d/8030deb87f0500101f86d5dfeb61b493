@@ -1,0 +1,13 @@
+#include "stm32f4xx.h"
+
+#define ADC1EN			(1U<<8)
+#define GPIOAEN			(1U<<0)
+
+void pa1_adc_init(void)
+{
+	/*Enabling clock access to pin PA1*/
+	RCC->AHB1ENR |= GPIOAEN;
+	/*Set mode of PA1 as analog */
+	GPIOA->MODER |= ((1U<<2) | (1U<<3));
+	/***CONFIGURE ADC MODULE***/
+}

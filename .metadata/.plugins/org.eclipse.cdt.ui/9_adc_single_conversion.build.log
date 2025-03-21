@@ -1,0 +1,10 @@
+13:25:53 **** Incremental Build of configuration Debug for project 9_adc_single_conversion ****
+make -j16 all 
+arm-none-eabi-size  9_adc_single_conversion.elf 
+   text	   data	    bss	    dec	    hex	filename
+   5396	     92	   1908	   7396	   1ce4	9_adc_single_conversion.elf
+Finished building: default.size.stdout
+ 
+
+13:25:54 Build Finished. 0 errors, 0 warnings. (took 596ms)
+
