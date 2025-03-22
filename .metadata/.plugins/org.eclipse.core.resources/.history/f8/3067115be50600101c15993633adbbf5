@@ -1,0 +1,25 @@
+/*
+ * systick.c
+ *
+ *  Created on: Mar 22, 2025
+ *      Author: verma
+ */
+#include "stm32f4xx.h"
+
+#define SYSTICK_LOAD_VALUE 		16000
+#define CTRL_ENABLE 			(1U<<0)
+#define CTRL_CLKSRC				(1U<<2)
+#define CTRL_COUNTFLAG			(1U<<16)
+
+
+
+void systickDelayMs(int n)
+{
+	/*Configure systick*/
+	/*Reload with number of clocks per */
+	SysTick->LOAD = SYSTICK_LOAD_VAL;
+
+	/*Clear systick current value register*/
+	/*Enable systick and select internal clock source*/
+}
+

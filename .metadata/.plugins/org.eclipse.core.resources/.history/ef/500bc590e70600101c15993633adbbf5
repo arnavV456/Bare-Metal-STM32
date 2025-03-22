@@ -1,0 +1,33 @@
+#include <stdio.h>
+#include <stdint.h>
+#include "stm32f4xx.h"
+#include "uart.h"
+#include "adc.h"
+#include "systick.h"
+
+
+
+#define GPIOAEN						(1U<<0)
+#define PIN5						(1U<<5)
+#define LED_PIN						PIN5
+
+
+int main(void){
+	RCC_AHB1EN_R |= GPIOAEN;
+	GPIOA_MODE_R |= (1U<<10); // standard led code
+	GPIOA_MODE_R &= ~(1U<<11)
+	uart2_tx_init();
+
+	while(1)
+	{
+
+
+		sensor_value = adc_read();
+		printf("Sensor value: %ld \n\r",sensor_value );
+	}
+
+}
+
+
+
+
