@@ -440,3 +440,21 @@ Command-line arguments:  -os win32 -ws win32 -arch x86_64
 
 !ENTRY org.eclipse.cdt.core 1 0 2025-03-22 08:31:21.798
 !MESSAGE Indexed '11_Systick_delay' (5 sources, 65 headers) in 1.26 sec: 3,044 declarations; 4,272 references; 4 unresolved inclusions; 30 syntax errors; 709 unresolved names (8.8%)
+!SESSION 2025-03-23 20:40:26.975 -----------------------------------------------
+eclipse.buildId=Version 1.18.0
+java.version=21.0.3
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_IN
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2025-03-23 20:40:33.976
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2025-03-23 20:40:33.976
+!MESSAGE Log4j2 initialized with config file C:\Projects\Bare-Metal-C-Programming\.metadata\.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2025-03-23 20:40:39.929
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.cdt.core 1 0 2025-03-23 20:41:00.783
+!MESSAGE Indexed '12_TIMERS' (7 sources, 67 headers) in 1.6 sec: 3,060 declarations; 4,404 references; 4 unresolved inclusions; 30 syntax errors; 709 unresolved names (8.7%)
