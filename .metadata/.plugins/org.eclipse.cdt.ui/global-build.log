@@ -1,34 +1,15 @@
-21:01:26 **** Build of configuration Debug for project 12_TIMERS ****
+09:36:43 **** Build of configuration Debug for project 13_timer_output_compare ****
 make -j16 all 
-arm-none-eabi-gcc "../Src/adc.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F446RETx -DNUCLEO_F446RE -DSTM32F446xx -c -I../Inc -I"C:/Projects/Bare-Metal-C-Programming/chip_headers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Projects/Bare-Metal-C-Programming/chip_headers/CMSIS/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/adc.d" -MT"Src/adc.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/adc.o"
 arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F446RETx -DNUCLEO_F446RE -DSTM32F446xx -c -I../Inc -I"C:/Projects/Bare-Metal-C-Programming/chip_headers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Projects/Bare-Metal-C-Programming/chip_headers/CMSIS/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
-arm-none-eabi-gcc "../Src/syscalls.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F446RETx -DNUCLEO_F446RE -DSTM32F446xx -c -I../Inc -I"C:/Projects/Bare-Metal-C-Programming/chip_headers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Projects/Bare-Metal-C-Programming/chip_headers/CMSIS/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/syscalls.d" -MT"Src/syscalls.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/syscalls.o"
-arm-none-eabi-gcc "../Src/sysmem.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F446RETx -DNUCLEO_F446RE -DSTM32F446xx -c -I../Inc -I"C:/Projects/Bare-Metal-C-Programming/chip_headers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Projects/Bare-Metal-C-Programming/chip_headers/CMSIS/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/sysmem.d" -MT"Src/sysmem.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/sysmem.o"
-arm-none-eabi-gcc "../Src/systick.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F446RETx -DNUCLEO_F446RE -DSTM32F446xx -c -I../Inc -I"C:/Projects/Bare-Metal-C-Programming/chip_headers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Projects/Bare-Metal-C-Programming/chip_headers/CMSIS/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/systick.d" -MT"Src/systick.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/systick.o"
 arm-none-eabi-gcc "../Src/tim.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F446RETx -DNUCLEO_F446RE -DSTM32F446xx -c -I../Inc -I"C:/Projects/Bare-Metal-C-Programming/chip_headers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Projects/Bare-Metal-C-Programming/chip_headers/CMSIS/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/tim.d" -MT"Src/tim.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/tim.o"
-arm-none-eabi-gcc "../Src/uart.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F446RETx -DNUCLEO_F446RE -DSTM32F446xx -c -I../Inc -I"C:/Projects/Bare-Metal-C-Programming/chip_headers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Projects/Bare-Metal-C-Programming/chip_headers/CMSIS/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/uart.d" -MT"Src/uart.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/uart.o"
-arm-none-eabi-gcc -o "12_TIMERS.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Projects\Bare-Metal-C-Programming\12_TIMERS\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="12_TIMERS.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: 12_TIMERS.elf
+arm-none-eabi-gcc -o "13_timer_output_compare.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Projects\Bare-Metal-C-Programming\13_timer_output_compare\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="13_timer_output_compare.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 13_timer_output_compare.elf
  
-arm-none-eabi-size  12_TIMERS.elf 
-arm-none-eabi-objdump -h -S 12_TIMERS.elf  > "12_TIMERS.list"
+arm-none-eabi-size  13_timer_output_compare.elf 
+arm-none-eabi-objdump -h -S 13_timer_output_compare.elf  > "13_timer_output_compare.list"
    text	   data	    bss	    dec	    hex	filename
-   5344	     92	   1900	   7336	   1ca8	12_TIMERS.elf
+    876	      0	   1568	   2444	    98c	13_timer_output_compare.elf
 Finished building: default.size.stdout
  
-Finished building: 12_TIMERS.list
- 
-21:08:49 **** Incremental Build of configuration Debug for project 12_TIMERS ****
-make -j16 all 
-arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F446RETx -DNUCLEO_F446RE -DSTM32F446xx -c -I../Inc -I"C:/Projects/Bare-Metal-C-Programming/chip_headers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Projects/Bare-Metal-C-Programming/chip_headers/CMSIS/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
-arm-none-eabi-gcc -o "12_TIMERS.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Projects\Bare-Metal-C-Programming\12_TIMERS\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="12_TIMERS.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: 12_TIMERS.elf
- 
-arm-none-eabi-size  12_TIMERS.elf 
-arm-none-eabi-objdump -h -S 12_TIMERS.elf  > "12_TIMERS.list"
-   text	   data	    bss	    dec	    hex	filename
-   5344	     92	   1900	   7336	   1ca8	12_TIMERS.elf
-Finished building: default.size.stdout
- 
-Finished building: 12_TIMERS.list
+Finished building: 13_timer_output_compare.list
  
