@@ -1,0 +1,17 @@
+17:53:47 **** Incremental Build of configuration Debug for project 14_timer_input_capture ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/tim.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F446RETx -DNUCLEO_F446RE -DSTM32F446xx -c -I../Inc -I"C:/Projects/Bare-Metal-C-Programming/chip_headers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Projects/Bare-Metal-C-Programming/chip_headers/CMSIS/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/tim.d" -MT"Src/tim.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/tim.o"
+arm-none-eabi-gcc -o "14_timer_input_capture.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Projects\Bare-Metal-C-Programming\14_timer_input_capture\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="14_timer_input_capture.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 14_timer_input_capture.elf
+ 
+arm-none-eabi-size  14_timer_input_capture.elf 
+arm-none-eabi-objdump -h -S 14_timer_input_capture.elf  > "14_timer_input_capture.list"
+   text	   data	    bss	    dec	    hex	filename
+   1048	      0	   1568	   2616	    a38	14_timer_input_capture.elf
+Finished building: default.size.stdout
+ 
+Finished building: 14_timer_input_capture.list
+ 
+
+17:53:48 Build Finished. 0 errors, 0 warnings. (took 1s.109ms)
+

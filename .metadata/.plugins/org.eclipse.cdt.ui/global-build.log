@@ -1,15 +1,14 @@
-09:36:43 **** Build of configuration Debug for project 13_timer_output_compare ****
+17:53:47 **** Incremental Build of configuration Debug for project 14_timer_input_capture ****
 make -j16 all 
-arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F446RETx -DNUCLEO_F446RE -DSTM32F446xx -c -I../Inc -I"C:/Projects/Bare-Metal-C-Programming/chip_headers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Projects/Bare-Metal-C-Programming/chip_headers/CMSIS/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
 arm-none-eabi-gcc "../Src/tim.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F446RETx -DNUCLEO_F446RE -DSTM32F446xx -c -I../Inc -I"C:/Projects/Bare-Metal-C-Programming/chip_headers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Projects/Bare-Metal-C-Programming/chip_headers/CMSIS/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/tim.d" -MT"Src/tim.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/tim.o"
-arm-none-eabi-gcc -o "13_timer_output_compare.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Projects\Bare-Metal-C-Programming\13_timer_output_compare\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="13_timer_output_compare.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: 13_timer_output_compare.elf
+arm-none-eabi-gcc -o "14_timer_input_capture.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Projects\Bare-Metal-C-Programming\14_timer_input_capture\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="14_timer_input_capture.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 14_timer_input_capture.elf
  
-arm-none-eabi-size  13_timer_output_compare.elf 
-arm-none-eabi-objdump -h -S 13_timer_output_compare.elf  > "13_timer_output_compare.list"
+arm-none-eabi-size  14_timer_input_capture.elf 
+arm-none-eabi-objdump -h -S 14_timer_input_capture.elf  > "14_timer_input_capture.list"
    text	   data	    bss	    dec	    hex	filename
-    876	      0	   1568	   2444	    98c	13_timer_output_compare.elf
+   1048	      0	   1568	   2616	    a38	14_timer_input_capture.elf
 Finished building: default.size.stdout
  
-Finished building: 13_timer_output_compare.list
+Finished building: 14_timer_input_capture.list
  
