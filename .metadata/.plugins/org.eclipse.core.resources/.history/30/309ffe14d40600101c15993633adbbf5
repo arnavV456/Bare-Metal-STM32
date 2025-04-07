@@ -1,8 +1,0 @@
-/*
- * systick.c
- *
- *  Created on: Mar 22, 2025
- *      Author: verma
- */
-#include "stm32f4xx.h"
-

@@ -1,0 +1,38 @@
+//we want an interrupt to occur when the push button is pressed
+#include "exti.h"
+
+#define GPIOCEN			(1U<<2)
+#define SYSCFGEN 		(1U<<14)
+
+void pc13_exti_init(void)
+{
+	/*Advisable to Disable global interrupt*/
+	__disable_irq();
+
+	/*enable clock access for gpioC*/
+	RCC->AHB1ENR |= GPIOCEN;
+
+	/*Set PC13 as an input pin*/
+	GPIOC->MODER &= ~(1U<<26);
+	GPIOC->MODER &= ~(1U<<27);
+
+	/*enable clock access to SYSCFG since exti is part of the sysconfig module */
+	RCC->APB2ENR |= SYSCFGEN;
+
+	/*select port C for EXTI13*/
+	SYSCFG->EXTICR[3] |= (1U<<5);
+
+	/*unmask EXTI13*/
+	/*go to the interrupt mask register*/
+	EXTI->IMR |= (1U<<13);
+
+	/*Select falling edge trigger EXTI_FTSR*/
+	EXTI->FTSR |= (1U<<13);
+
+	/*Enable EXTI13 line in NVIC*/
+	NVIC_EnableIRQ(EXTI15_10_IRQn);
+
+	/*Enable Global Interrupt*/
+	__enable_irq();
+
+}

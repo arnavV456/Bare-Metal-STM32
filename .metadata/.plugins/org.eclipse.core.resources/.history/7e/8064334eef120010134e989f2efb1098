@@ -1,0 +1,9 @@
+
+#ifndef EXTI_H_
+#define EXTI_H_
+
+#include "stm32f4xx.h"
+pc13_exti_init();
+
+
+#endif /* EXTI_H_ */
